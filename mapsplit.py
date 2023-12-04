@@ -26,7 +26,7 @@ def set_background_image_from_local2(path_to_image):
     
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
-set_background_image_from_local2('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local2('pages/assets/bg.png')
 class MultiLocatedSelectbox:
     def __init__(self, options, key):
         self._options = options
@@ -90,8 +90,8 @@ def app():
 
 
     # Build paths to the relevant TIFF files based on user input.
-    tiff_file_day_one = f"multiapp_app\\pages\\rasters\\Att{selected_attribute}Jour{selected_day_one}.tif"
-    tiff_file_day_two = f"multiapp_app\\pages\\rasters\\Att{selected_attribute_two}Jour{selected_day_two}.tif"
+    tiff_file_day_one = f"pages/assets/Att{selected_attribute}Jour{selected_day_one}.tif"
+    tiff_file_day_two = f"pages/assets/{selected_attribute_two}Jour{selected_day_two}.tif"
 
     # Create image overlays using the helper functions above.
     img_base64_day_one, bounds_day_one = create_image_overlay(tiff_file_day_one)

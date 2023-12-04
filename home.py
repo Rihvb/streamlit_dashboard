@@ -92,7 +92,7 @@ def app ():
     <div class="welcome-banner">
         <h2 style="color: #FFA500">Bienvenue au Dashboard Geospatial</h2>
         <h1 style="color: #fff">Explorer les données géospatiales avec des cartes interactives et des visualisations.</h1>
-        <p style="color: #cccccc"> Le Dashboard GeoAnalytique a été développé pour exploiter un schéma de données spatio-temporel composé de points géométriques avec divers attributs. Ces données fictives, au nombre de 1000 points, sont distribuées de manière aléatoire à travers le Maroc. .</p>
+        <p style="color: #cccccc"> Le Dashboard GeoAnalytique a été développé pour exploiter un schéma de données spatio-temporel composé de points géométriques avec divers attributs. Ces données fictives, au nombre de 1200 points, sont distribuées de manière aléatoire à travers le Maroc. .</p>
     </div>
      <div class="description">
         

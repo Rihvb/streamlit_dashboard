@@ -27,7 +27,7 @@ def set_background_image_from_local5(path_to_image):
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
 set_background_image_from_local5('pages/assets/bg.png')
-@st.cache_resource
+
 def app() :
     # Load GeoDataFrame and ensure the GeoDataFrame has the right CRS
     gdf = gpd.read_parquet("pages/assets/output.geoparquet555")

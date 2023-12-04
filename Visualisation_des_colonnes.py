@@ -102,7 +102,7 @@ def app():
                                 popup=f"{visualization_type}: {value}"
                         ).add_to(m)
                         Fullscreen().add_to(m)
-                        folium_static(m,width=1000, height=400)
+                        folium_static(m,width=1000, height=500)
                         st.markdown('</div>', unsafe_allow_html=True)
 
                         # Legends for "propriete2" and "propriete3" columns based on color scale
@@ -170,7 +170,7 @@ def app():
                                 popup=f"{value}"
                             ).add_to(m)
                         Fullscreen().add_to(m)
-                        folium_static(m,width=1000, height=400)
+                        folium_static(m,width=1000, height=500)
                         step = (max_val - min_val) / 5
 
                     # Generate legends with 5 specific values

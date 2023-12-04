@@ -26,10 +26,10 @@ def set_background_image_from_local5(path_to_image):
     
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
-set_background_image_from_local5('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local5('pages/assets/bg.png')
 def app() :
     # Load GeoDataFrame and ensure the GeoDataFrame has the right CRS
-    gdf = gpd.read_parquet("multiapp_app\\pages\\assets\\output.geoparquet555")
+    gdf = gpd.read_parquet("pages/assets/output.geoparquet555")
     if gdf.crs is None:
         gdf.set_crs(epsg=4326, inplace=True)
     elif gdf.crs.to_epsg() != 4326:
@@ -105,10 +105,10 @@ def app() :
             except ValueError:
                 st.sidebar.error("Coordonnées incorrectes, Veuillez respecter le format: (lat, lon)")
     elif spatial_query_type == "Chercher point par région":
-        gdf_points = gpd.read_parquet("multiapp_app\\pages\\assets\\output.geoparquet555")
+        gdf_points = gpd.read_parquet("pages/assets/output.geoparquet555")
         # Load the shapefile containing region boundaries
         # Load region boundaries and extract unique regions
-        regions_gdf = gpd.read_file("multiapp_app\\pages\\assets\\region1.shp")
+        regions_gdf = gpd.read_file("pages/assets/region1.shp")
         regions = [''] + list(regions_gdf['Nom_Region'].unique())
 
         # Initialize Streamlit selectors with empty default option
@@ -123,7 +123,7 @@ def app() :
             region_polygon = regions_gdf[regions_gdf['Nom_Region'] == selected_region].geometry.iloc[0]
             points_within_region = gdf_points[gdf_points.geometry.within(region_polygon)]
             
-            provinces_gdf = gpd.read_file("multiapp_app\\pages\\assets\\provinec.shp")
+            provinces_gdf = gpd.read_file("pages/assets/provinec.shp")
             provinces_gdf_within_region = provinces_gdf[provinces_gdf.within(region_polygon)]
             provinces = [''] + list(provinces_gdf_within_region['Nom_Provin'].unique())
             selected_province = st.selectbox("Selectionner une province", provinces, index=0)
@@ -132,7 +132,7 @@ def app() :
                 province_polygon = provinces_gdf[provinces_gdf['Nom_Provin'] == selected_province].geometry.iloc[0]
                 points_within_province = points_within_region[points_within_region.geometry.within(province_polygon)]
                 
-                communes_gdf = gpd.read_file("multiapp_app\\pages\\assets\\commune.shp")
+                communes_gdf = gpd.read_file("pages/assets/commune.shp")
                 communes_gdf_within_province = communes_gdf[communes_gdf.within(province_polygon)]
                 communes = [''] + list(communes_gdf_within_province['Nom_Commun'].unique())
                 selected_commune = st.selectbox("Selectionner une commune", communes, index=0)

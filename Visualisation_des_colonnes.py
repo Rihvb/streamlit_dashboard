@@ -37,7 +37,7 @@ def app():
             }
             .map-container {
                 /* Example CSS for the map container */
-                height: 10px; /* Adjust height as needed */
+                height: 5px; /* Adjust height as needed */
                 width: 100%; /* Adjust width as needed, or use fixed width */
                 margin-bottom: 10px; /* Space below the map */
                 margin-right: 20px
@@ -102,7 +102,7 @@ def app():
                                 popup=f"{visualization_type}: {value}"
                         ).add_to(m)
                         Fullscreen().add_to(m)
-                        folium_static(m,width=1000, height=500)
+                        folium_static(m,width=1000, height=400)
                         st.markdown('</div>', unsafe_allow_html=True)
 
                         # Legends for "propriete2" and "propriete3" columns based on color scale
@@ -170,7 +170,7 @@ def app():
                                 popup=f"{value}"
                             ).add_to(m)
                         Fullscreen().add_to(m)
-                        folium_static(m,width=1000, height=600)
+                        folium_static(m,width=1000, height=400)
                         step = (max_val - min_val) / 5
 
                     # Generate legends with 5 specific values

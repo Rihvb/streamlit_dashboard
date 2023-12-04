@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+from streamlit-option-menu import option_menu
 import home, Slider, Visualisation_des_colonnes, Timelapse, mapsplit, popupcharts, attquery, spatialquery
 from home import set_background_image_from_local
 from Slider import set_background_image_from_local4

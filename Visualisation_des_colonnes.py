@@ -10,7 +10,7 @@ from folium import FeatureGroup, Marker, Map
 from branca.element import Template, MacroElement
 from folium import plugins
 from folium.plugins import MarkerCluster, Fullscreen
-
+@st.cache_resource
 def set_background_image_from_local7(path_to_image):
     with open(path_to_image, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()

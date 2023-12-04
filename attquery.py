@@ -27,7 +27,7 @@ def set_background_image_from_local1(path_to_image):
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
 
-set_background_image_from_local1('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local1('pages/assets/bg.png')
 
 def app (): 
     
@@ -35,7 +35,7 @@ def app ():
     st.header('Filtrage par requêtes attributaires')
 
     # Load the geospatial data
-    gdf = gpd.read_parquet("multiapp_app\\pages\\assets\\output.geoparquet555")
+    gdf = gpd.read_parquet("pages/assets/output.geoparquet555")
 
     # Ensure the GeoDataFrame has the correct Coordinate Reference System (CRS)
     if gdf.crs is None:

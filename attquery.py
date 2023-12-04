@@ -28,7 +28,7 @@ def set_background_image_from_local1(path_to_image):
 # Example usage, replace 'local_image.png' with the path to your local image file.
 
 set_background_image_from_local1('pages/assets/bg.png')
-
+@st.cache_resource
 def app (): 
     
 
@@ -55,11 +55,11 @@ def app ():
 
     if visualization_type == "Attribute Range Query":
         # Code for attribute range query
-        st.header("Select Attribute Column and Range")
+        st.subheader("Entrer un intervalle")
         
         # Get column names for selection
         selectable_columns = [col for col in gdf.columns if col not in ['geometry', 'latitude', 'longitude', 'Latitude', 'Longitude', 'Propriete1','Propriete4']]
-        selected_column = st.selectbox("Select Column", selectable_columns)
+        selected_column = st.selectbox("Selectionner une colonne", selectable_columns)
 
         # Get minimum and maximum values for the selected column
         min_value = gdf[selected_column].min()
@@ -96,7 +96,7 @@ def app ():
             st.write(filtered_gdf)
     else:
         # Code for time range query
-        st.header("Select Date Range")
+        st.subheader("Selectionner un intervalle de temps")
         gdf['Propriete4'] = pd.to_datetime(gdf['Propriete4'])
         min_date = gdf['Propriete4'].min()
         max_date = gdf['Propriete4'].max()

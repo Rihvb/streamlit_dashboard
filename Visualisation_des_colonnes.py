@@ -102,7 +102,7 @@ def app():
                                 popup=f"{visualization_type}: {value}"
                         ).add_to(m)
                         Fullscreen().add_to(m)
-                        folium_static(m,width=1000, height=600)
+                        folium_static(m,width=1000, height=500)
                         st.markdown('</div>', unsafe_allow_html=True)
 
                         # Legends for "propriete2" and "propriete3" columns based on color scale

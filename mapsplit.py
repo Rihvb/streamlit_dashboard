@@ -43,6 +43,7 @@ class MultiLocatedSelectbox:
 
     def _set_key(self, key):
         st.session_state[self._key] = st.session_state[key]
+@st.cache_resource
 def app():
     st.title("Split-MAap")
     # Helper function to convert raster to PNG.
@@ -53,6 +54,7 @@ def app():
         return base64.b64encode(buffered.getvalue()).decode('utf-8')
 
     # Helper function to create an image overlay.
+    
     def create_image_overlay(tiff_file):
         with rasterio.open(tiff_file) as dataset:
             bands = [1, 2, 3] # Red, Green, Blue band indexes

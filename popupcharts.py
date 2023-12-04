@@ -26,7 +26,7 @@ def set_background_image_from_local3(path_to_image):
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
 
-set_background_image_from_local3('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local3('pages/assets/bg.png')
 
 
 def app():
@@ -39,7 +39,7 @@ def app():
         col1, col2 = st.columns([2, 1])
     
         # Load GeoDataFrame
-        gdf = gpd.read_parquet("multiapp_app\\pages\\assets\\output.geoparquet555")
+        gdf = gpd.read_parquet("pages/assets/output.geoparquet555")
 
         # Ensure the GeoDataFrame has the right CRS
         if gdf.crs is None:

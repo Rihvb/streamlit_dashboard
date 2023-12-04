@@ -25,7 +25,7 @@ def set_background_image_from_local7(path_to_image):
     """
     
     st.markdown(background_image_css, unsafe_allow_html=True)
-set_background_image_from_local7('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local7('pages/assets/bg.png')
 def app():
     
 
@@ -57,7 +57,7 @@ def app():
     visualization_type = st.selectbox("Choisir la colonne à visualiser", ["Propriete2", "Propriete3", "Attributs"])
 
     # Load the geospatial data
-    gdf = gpd.read_parquet("multiapp_app\\pages\\assets\\output.geoparquet555")
+    gdf = gpd.read_parquet("pages/assets/output.geoparquet555")
     st.markdown('<div class="row">', unsafe_allow_html=True)
                 # Ensure the GeoDataFrame has the correct Coordinate Reference System (CRS)
     if gdf.crs is None:

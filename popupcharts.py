@@ -31,7 +31,7 @@ set_background_image_from_local3('pages/assets/bg.png')
 
 def app():
         st.title("Pop_Up charts")
-        st.header('Charts')
+        
         st.write("Clique sur un point pour afficher son graphe")
         # Content for Raster Map Slider will go here
       

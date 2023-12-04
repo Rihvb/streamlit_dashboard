@@ -18,7 +18,7 @@ def set_background_image_from_local4(path_to_image):
     
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
-set_background_image_from_local4('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local4('pages/assets/bg.png')
 def app():
     st.title("Slider des rasters")
     # User selects the attribute
@@ -27,35 +27,35 @@ def app():
     # Dictionary mapping attributes to their respective raster files
     raster_files_dict = {
         'Attribut 1': [
-            'multiapp_app\\pages\\rasters\\Att1Jour0.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-1.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-2.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-3.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-4.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-5.tif',
-            'multiapp_app\\pages\\rasters\\Att1Jour-6.tif'
+            'pages/rasters/Att1Jour0.tif',
+            'pages/rasters/Att1Jour-1.tif',
+            'pages/rasters/Att1Jour-2.tif',
+            'pages/rasters/Att1Jour-3.tif',
+            'pages/rasters/Att1Jour-4.tif',
+            'pages/rasters/Att1Jour-5.tif',
+            'pages/rasters/Att1Jour-6.tif'
             
             # ... add the rest of the Attribute 1 raster files
         ],
         'Attribut 2': [
-            'multiapp_app\\pages\\rasters\\Att2Jour0.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-1.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-2.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-3.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-4.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-5.tif',
-            'multiapp_app\\pages\\rasters\\Att2Jour-6.tif',
+            'pages/rasters/Att2Jour0.tif',
+            'pages/rasters/Att2Jour-1.tif',
+            'pages/rasters/Att2Jour-2.tif',
+            'pages/rasters/Att2Jour-3.tif',
+            'pages/rasters/Att2Jour-4.tif',
+            'pages/rasters/Att2Jour-5.tif',
+            'pages/rasters/Att2Jour-6.tif',
 
             # ... add the rest of the Attribute 2 raster files
         ],
         'Attribut 3': [
-            'multiapp_app\\pages\\rasters\\Att3Jour0.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-1.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-2.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-3.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-4.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-5.tif',
-            'multiapp_app\\pages\\rasters\\Att3Jour-6.tif',
+            'pages/rasters/Att3Jour0.tif',
+            'pages/rasters/Att3Jour-1.tif',
+            'pages/rasters/Att3Jour-2.tif',
+            'pages/rasters/Att3Jour-3.tif',
+            'pages/rasters/Att3Jour-4.tif',
+            'pages/rasters/Att3Jour-5.tif',
+            'pages/rasters/Att3Jour-6.tif',
             # ... add the rest of the Attribute 3 raster files
         ]
     }

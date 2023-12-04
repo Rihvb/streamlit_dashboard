@@ -51,7 +51,7 @@ def app ():
     gdf = gdf[~gdf.geometry.is_empty & gdf.geometry.notnull() & gdf.geometry.is_valid]
     col1, col2 = st.columns([3, 1])
     # for selecting visualization type
-    visualization_type = st.radio("Select Visualization Type", ["Attribute Range Query", "Time Range Query"])
+    visualization_type = st.radio("Choisir le type de requête", ["Attribute Range Query", "Time Range Query"])
 
     if visualization_type == "Attribute Range Query":
         # Code for attribute range query

@@ -16,16 +16,16 @@ def set_background_image_from_local6(path_to_image):
     """
     
     st.markdown(background_image_css, unsafe_allow_html=True)
-set_background_image_from_local6('multiapp_app\\pages\\assets\\bg.png')
+set_background_image_from_local6('pages/assets/bg.png')
 
 def app():
     
     st.title("Timelapse des jours")
     # Dictionary of attributes to corresponding timelapse GIF paths
     timelapse_gifs = {
-        'Attribute 1': 'multiapp_app\\pages\\timelapse\\timelapseatt1.gif',
-        'Attribute 2': 'multiapp_app\\pages\\timelapse\\timelapseatt2.gif',
-        'Attribute 3': 'multiapp_app\\pages\\timelapse\\timelapseatt3.gif',
+        'Attribute 1': 'pages/timelapse/timelapseatt1.gif',
+        'Attribute 2': 'pages/timelapse/timelapseatt2.gif',
+        'Attribute 3': 'pages/timelapse/timelapseatt3.gif',
     }
 
     # Let the user select an attribute

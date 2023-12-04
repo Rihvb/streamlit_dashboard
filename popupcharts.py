@@ -28,7 +28,7 @@ def set_background_image_from_local3(path_to_image):
 
 set_background_image_from_local3('pages/assets/bg.png')
 
-
+@st.cache_resource
 def app():
         st.title("Pop_Up charts")
         st.header('Charts')

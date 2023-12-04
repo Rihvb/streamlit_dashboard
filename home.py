@@ -15,7 +15,7 @@ def set_background_image_from_local(path_to_image):
     
     st.markdown(background_image_css, unsafe_allow_html=True)
 # Example usage, replace 'local_image.png' with the path to your local image file.
-set_background_image_from_local('multiapp_app\\pages\\assets\\getimg_ai-2023-12-03T21_14_55.377Z.png')
+set_background_image_from_local('pages/assets/bg.pnggetimg_ai-2023-12-03T21_14_55.377Z.png')
 def app (): 
     st.markdown(
     """

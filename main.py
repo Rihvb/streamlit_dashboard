@@ -40,28 +40,28 @@ class MultiApp:
             )
         if app == 'Home':
             home.app()
-            set_background_image_from_local('multiapp_app\\pages\\assets\\getimg_ai-2023-12-03T21_14_55.377Z.png')
+            set_background_image_from_local('pages/assets/getimg_ai-2023-12-03T21_14_55.377Z.png')
         elif app == 'Visualisation des colonnes':
             Visualisation_des_colonnes.app()
-            set_background_image_from_local7('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local7('pages/assets/bg.png')
         elif app == 'Slider':
             Slider.app()
-            set_background_image_from_local4('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local4('pages/assets/bg.png')
         elif app == 'SplitMap':
             mapsplit.app()
-            set_background_image_from_local2('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local2('pages/assets/bg.png')
         elif app == 'Timelapse':
             Timelapse.app()
-            set_background_image_from_local6('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local6('pages/assets/bg.png')
         elif app == 'PopUp-Charts':
             popupcharts.app()
-            set_background_image_from_local3('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local3('pages/assets/bg.png')
         elif app == 'Requêtes attributaires':
             attquery.app()
-            set_background_image_from_local1('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local1('pages/assets/bg.png')
         elif app == 'Requêtes spatiales':
             spatialquery.app()
-            set_background_image_from_local5('multiapp_app\\pages\\assets\\bg.png')
+            set_background_image_from_local5('pages/assets/bg.png')
 
 if __name__ == "__main__":
     # Instantiate and run the MultiApp class

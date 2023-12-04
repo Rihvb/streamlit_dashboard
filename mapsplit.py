@@ -9,7 +9,7 @@ import numpy as np
 import base64
 from io import BytesIO
 import folium
-@st.cache_resource
+
 # Other imports here based on the needs of the script.
 def set_background_image_from_local2(path_to_image):
     with open(path_to_image, "rb") as image_file:

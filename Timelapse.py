@@ -38,7 +38,7 @@ def app():
     with Image.open(gif_path) as im:
         frames = [frame.copy() for frame in ImageSequence.Iterator(im)]
         # Define a slower frame duration or speed ratio
-        frame_duration = int(im.info['duration'] *3)  # Increase duration by 50%
+        frame_duration = int(im.info['duration'] *10)  # Increase duration by 50%
         frames = [frame.resize((frame.width//2, frame.height//2)) for frame in frames]  # Reduce size by 50%
         # Save frames to bytes buffer
         byte_io = io.BytesIO()

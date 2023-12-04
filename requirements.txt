@@ -5,3 +5,4 @@ geopandas
 folium
 plotly
 rasterio
+streamlit_folium

@@ -90,8 +90,8 @@ def app():
 
 
     # Build paths to the relevant TIFF files based on user input.
-    tiff_file_day_one = f"pages/assets/Att{selected_attribute}Jour{selected_day_one}.tif"
-    tiff_file_day_two = f"pages/assets/{selected_attribute_two}Jour{selected_day_two}.tif"
+    tiff_file_day_one = f"pages/rasters/Att{selected_attribute}Jour{selected_day_one}.tif"
+    tiff_file_day_two = f"pages/rasters/{selected_attribute_two}Jour{selected_day_two}.tif"
 
     # Create image overlays using the helper functions above.
     img_base64_day_one, bounds_day_one = create_image_overlay(tiff_file_day_one)

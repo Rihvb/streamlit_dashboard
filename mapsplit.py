@@ -43,9 +43,8 @@ class MultiLocatedSelectbox:
 
     def _set_key(self, key):
         st.session_state[self._key] = st.session_state[key]
-@st.cache_resource
 def app():
-    st.title("Split-MAap")
+    st.title("Split-Map")
     # Helper function to convert raster to PNG.
     def raster_to_png(image_array):
         image = Image.fromarray(reshape_as_image(image_array).clip(0, 255).astype(np.uint8))

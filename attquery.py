@@ -10,7 +10,7 @@ import plotly.graph_objs as go
 import base64
 from folium import FeatureGroup, Marker, Map
 from branca.element import Template, MacroElement
-@st.cache_resource
+
 def set_background_image_from_local1(path_to_image):
     with open(path_to_image, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
@@ -28,7 +28,7 @@ def set_background_image_from_local1(path_to_image):
 # Example usage, replace 'local_image.png' with the path to your local image file.
 
 set_background_image_from_local1('pages/assets/bg.png')
-@st.cache_resource
+
 def app (): 
     
 

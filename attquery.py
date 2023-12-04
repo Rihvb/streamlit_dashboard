@@ -32,7 +32,7 @@ set_background_image_from_local1('pages/assets/bg.png')
 def app (): 
     
 
-    st.header('Filtrage par requêtes attributaires')
+    st.title('Filtrage par requêtes attributaires')
 
     # Load the geospatial data
     gdf = gpd.read_parquet("pages/assets/output.geoparquet555")

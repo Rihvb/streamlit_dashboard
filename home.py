@@ -119,7 +119,7 @@ def app ():
 
     <div class="app-footer">
         <p>Geospatial Dashboard © 2023 , developpé par :</p>
-        <p><strong>Moussadek Rihab et Ait Benbouchaib Oumaima</strong></p>
+        <p><strong>Moussadek Rihab </strong></p>
         
         
     </div>
